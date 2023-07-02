@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg fill="url(#my-cool-gradient)" width="100px" height="100px" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="my-cool-gradient" x2="1" y2="1">
+      <stop offset="0%" stop-color='#a8c707' />
+      <stop offset="10%" stop-color='#a8c707' />
+      <stop offset="90%" stop-color='#558F24' />
+    </linearGradient>
+  </defs>
+  <path d="M202.82812,146.82812l-72,72a3.99853,3.99853,0,0,1-5.65625,0l-72-72a3.99957,3.99957,0,0,1,5.65625-5.65625L124,206.34277V40a4,4,0,0,1,8,0V206.34277l65.17187-65.1709a3.99957,3.99957,0,0,1,5.65625,5.65625Z"/>
+</svg>

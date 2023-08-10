@@ -7,11 +7,12 @@ export const DescriptionField = styled.div`
   margin-bottom: 80px;
   h2 {
     font-size: 3em;
+    margin-top: 1rem;
     margin-bottom: 2.4rem;
-    width: 70%;
+    width: 84%;
   }
   .description-intro {
-    width: 70%;
+    width: 80%;
   }
   .description-bottom {
     display: flex;
@@ -22,8 +23,10 @@ export const DescriptionField = styled.div`
   }
 
   span {
-    border-bottom: 1px solid ${colors.FONT_DARK_GRAY};
-    width: max-content;
+    background: ${colors.LIGHT_GREEN};
+    padding: 4px 18px 4px 8px;
+    clip-path: polygon(3% 0, 100% 0%, 90% 100%, 0% 100%);
+    border-radius: 2px;
   }
 
   @media screen and (max-width: 1440px) {
@@ -54,18 +57,22 @@ export const DescriptionField = styled.div`
   @media screen and (max-width: 1260px) {
     h2 {
       font-size: 2.4em;
+      width: 99%;
     }
     .description-bottom {
       font-size: 1.4rem;
   }
 
   @media screen and (max-width:920px) {
+    padding: 5% 10% 0 10%;
+  
+  margin-bottom: 60px;
     h2 {
       font-size: 2.2em;
       width: 100%;
     }
     .description-intro {
-      width: 100%;
+      width: 98%;
     }
     .description-bottom {
       font-size: 1.4rem;
@@ -83,7 +90,7 @@ export const DescriptionField = styled.div`
 
 @media screen and (max-width: 515px) {
     h2 {
-      font-size: 1.6em;
+      font-size: 1.2em;
     }
     .description-intro {
       font-size: 0.8em;

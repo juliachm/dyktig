@@ -15,7 +15,10 @@ export default function Banner() {
               <p>
                 IT konsulentselskap med flinke folk som bryr seg om sine kunder
               </p>
-              <a href="#description-section-id" className="button-link">
+              <a
+                href="#description-section-id"
+                className="button-link smooth-scroll-link"
+              >
                 <img src={ArrowDown} className="arrow-down" />
               </a>
             </div>

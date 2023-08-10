@@ -6,22 +6,30 @@ import CloseIcon from '../../assets/icon-close.svg';
 export default function Header({ isOpen, mobileMenu }) {
   return (
     <Nav>
-      <a href="#home-section-id">
+      <a href="#home-section-id" className="smooth-scroll-link">
         <img src={Logo} alt="Logo" />
       </a>
 
       <ul className="hidden" id="home-section-id">
         <li>
-          <a href="#description-section-id">Om Dyktig</a>
+          <a href="#description-section-id" className="smooth-scroll-link">
+            Om Dyktig
+          </a>
         </li>
         <li>
-          <a href="#about-us">Vårt team</a>
+          <a href="#about-us" className="smooth-scroll-link">
+            Vårt team
+          </a>
         </li>
         <li>
-          <a href="#partners">Partnere</a>
+          <a href="#partners" className="smooth-scroll-link">
+            Partnere
+          </a>
         </li>
         <li className="contact-btn">
-          <a href="#contact">Kontakt</a>
+          <a href="#contact" className="smooth-scroll-link">
+            Kontakt
+          </a>
         </li>
       </ul>
 

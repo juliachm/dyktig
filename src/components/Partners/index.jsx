@@ -15,11 +15,11 @@ export default function Partners() {
             kunder er både små og store bedrifter.
           </p>
         </div>
-        <div className="logo-partners">
-          <img src={LogoCegal} alt="" />
-          <img src={LogoMoeller} alt="" />
-          <img src={LogoRoedeKors} alt="" />
-          <img src={LogoCognite} alt="" />
+        <div className="description-bottom">
+          <span>Cegal</span>
+          <span>Møller Bil</span>
+          <span>Røde Kors</span>
+          <span>Cognite</span>
         </div>
       </div>
     </PartnersField>

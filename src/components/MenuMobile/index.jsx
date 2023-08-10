@@ -1,13 +1,15 @@
 import { Menu } from './styled';
 
 export default function MobileMenu({ isOpen, handleMobileMenu }) {
+  const menuBarHeight = 60;
+
   const scrollToSection = (event, sectionId) => {
     event.preventDefault();
     handleMobileMenu();
     const targetElement = document.getElementById(sectionId);
     if (targetElement) {
       window.scrollTo({
-        top: targetElement.offsetTop,
+        top: targetElement.offsetTop - menuBarHeight,
         behavior: 'smooth',
       });
     }

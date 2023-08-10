@@ -103,7 +103,7 @@ export const Nav = styled.nav`
       top: 0;
       z-index: 1;
       margin: 20px;
-      width: 30px;
+      width: 48px;
     }
   }
 `;

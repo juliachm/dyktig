@@ -50,9 +50,9 @@ export const SectionBanner = styled.section`
     left: 20%;
     border: 1px solid transparent;
     transition: all 0.3s ease;
-    :hover {
-      transform: scale(1.04);
-    }
+    // :hover {
+    //   transform: scale(1.04);
+    // }
   }
 
   img.intro {

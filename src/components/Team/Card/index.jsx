@@ -1,7 +1,7 @@
 import { CardContainer } from './styled';
-import IconLinkedIn from '../../../assets/icon-linkedin-line.svg';
+import IconLinkedIn from '../../../assets/icon-linkedin.svg';
 
-export default function Card({ img, title, content }) {
+export default function Card({ img, title, content, linkedinURL }) {
   return (
     <CardContainer>
       <div className="card">
@@ -13,8 +13,12 @@ export default function Card({ img, title, content }) {
           <div className="team-card-content">
             <p className="text name">{title}</p>
             <p className="text position">{content}</p>
-            <a href="">
-              <img src={IconLinkedIn} alt="Icon Image" className="icon-card" />
+            <a className="icon-card" href={linkedinURL} target="_blank">
+              <img
+                src={IconLinkedIn}
+                alt="LinkedIn Icon"
+                className="icon-card"
+              />
             </a>
           </div>
         </article>

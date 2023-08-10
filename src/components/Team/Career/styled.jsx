@@ -41,7 +41,11 @@ export const CareerField = styled.div`
   @media screen and (max-width: 1500px) {
     width: 80%;
   }
+  @media screen and (max-width: 980px) {
+    width: 90%;
+  }
   @media screen and (max-width: 660px) {
+    width: 100%;
     h3 {
       font-size: 1.4rem;
     }
@@ -58,6 +62,23 @@ export const CareerField = styled.div`
       .arrow {
         font-size: 1.4rem;
       }
+    }
   }
-
+  @media screen and (max-width: 515px) {
+    h3 {
+      font-size: 1.2rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+    .description-bottom {
+      margin-top: 1.4rem;
+      .link {
+        font-size: 1.2rem;
+        padding-bottom: 2px;
+      }
+      .arrow {
+        font-size: 1.2rem;
+      }
+    }
 `;

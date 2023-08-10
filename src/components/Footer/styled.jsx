@@ -24,17 +24,14 @@ export const FooterField = styled.footer`
     justify-content: space-between;
 
     img.logo-footer {
-      position: relative;
-      width: 200px;
+      width: 140px;
     }
 
     .social-media {
       a img {
         height: 36px;
         filter: brightness(90%);
-
-        margin-left: 24px;
-        margin-right: 8px;
+        margin: 0 8px 6px 24px;
         :hover {
           filter: brightness(100%);
         }
@@ -44,7 +41,7 @@ export const FooterField = styled.footer`
 
   hr {
     width: 100%;
-    margin: 20px 0;
+    margin: 10px 0;
     border-top: 1px solid ${colors.LIGHT_GREEN};
     position: relative;
   }
@@ -57,49 +54,83 @@ export const FooterField = styled.footer`
 
   .our-company {
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
     margin-bottom: 40px;
     font-size: 1rem;
     align-items: baseline;
     color: ${colors.LIGHTEST_GREY};
 
-    p {
+    .description {
       width: 50%;
       margin-bottom: 1.6rem;
     }
-    a {
-      margin-left: auto;
-    }
-
-    .footer-link {
-      font-size: 1.6rem;
-      text-decoration: none;
-      color: ${colors.LIGHTEST_GREY};
+    .email-contact {
+      font-size: 1.4rem;
       margin-right: 8px;
-      filter: brightness(90%);
-
-      :hover {
-        text-decoration: none;
-        filter: brightness(100%);
-      }
     }
   }
+  // a {
+  //   margin-left: auto;
+  // }
+
+  // .footer-link {
+  //   font-size: 1.4rem;
+  //   text-decoration: none;
+  //   color: ${colors.LIGHTEST_GREY};
+  //   margin-right: 8px;
+  //   filter: brightness(90%);
+  //   background: ${colors.MAIN_GREEN};
+  //   padding: 4px 18px 4px 8px;
+  //   clip-path: polygon(3% 0, 100% 0%, 90% 100%, 0% 100%);
+  //   border-radius: 2px;
+
+  //   :hover {
+  //     text-decoration: none;
+  //     filter: brightness(100%);
+  //   }
+  // }
+  // a {
+  //   text-decoration: none;
+  //   color: ${colors.LIGHTEST_GREY};
+  //   :hover {
+  //     text-decoration: none;
+  //   }
+  // }
+  // .link {
+  //   font-size: 1.6rem;
+  //   // border-bottom: 1px solid ${colors.LIGHTEST_GREY};
+  //   width: max-content;
+  //   padding-bottom: 6px;
+  // }
+  // .arrow {
+  //   color: ${colors.LIGHTEST_GREY};
+  //   font-size: 1.6rem;
+  // }
 
   /* Mobile */
   @media screen and (max-width: 1040px) {
-    p {
-      width: 45%;
-      margin-bottom: 1.4rem;
+    .our-company {
+      font-size: 0.9rem;
+
+      .description {
+        width: 60%;
+      }
+      .email-contact {
+        font-size: 1.2rem;
+      }
     }
   }
 
   @media screen and (max-width: 760px) {
     .footer-top {
       img.logo-footer {
-        width: 160px;
+        width: 120px;
+        margin-top: 10px;
       }
       .social-media {
         a img {
+          margin: 0 8px 6px 24px;
           height: 30px;
           margin-left: 20px;
         }
@@ -107,19 +138,13 @@ export const FooterField = styled.footer`
     }
 
     .our-company {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 40px;
-      font-size: 1rem;
-      align-items: baseline;
-      color: ${colors.LIGHTEST_GREY};
+      font-size: 0.8rem;
 
-      p {
-        width: 70%;
-        margin-bottom: 1.6rem;
+      .description {
+        width: 50%;
       }
-      .footer-link {
-        font-size: 1.4rem;
+      .email-contact {
+        font-size: 1.1rem;
       }
     }
     .footer-bottom {
@@ -130,7 +155,7 @@ export const FooterField = styled.footer`
   @media screen and (max-width: 540px) {
     .footer-top {
       img.logo-footer {
-        width: 120px;
+        width: 100px;
       }
       .social-media {
         a img {
@@ -138,15 +163,26 @@ export const FooterField = styled.footer`
           margin-left: 12px;
         }
       }
-      .our-company {
-        p {
-          width: 80%;
-          font-size: 0.9rem;
-        }
-        .footer-link {
-          font-size: 1.1rem;
-        }
+    }
+    .our-company {
+      display: grid;
+      grid-template-rows: auto auto;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      font-size: 0.7rem;
+
+      .description {
+        width: 90%;
+        text-align: left;
       }
+      .email-contact {
+        font-size: 1.1rem;
+        text-align: right;
+      }
+    }
+    .footer-bottom {
+      font-size: 0.6rem;
     }
   }
 `;

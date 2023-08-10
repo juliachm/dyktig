@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 const SmoothScroll = () => {
   useEffect(() => {
     const smoothScrollHandler = (event) => {
-      const targetLink = event.target.closest('a');
+      const targetLink = event.target.closest('.smooth-scroll-link');
       if (targetLink) {
         event.preventDefault();
         const targetId = targetLink.getAttribute('href')?.slice(1);

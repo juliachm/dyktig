@@ -4,12 +4,15 @@ export default function Description() {
   return (
     <DescriptionField id="description-section-id">
       <div>
-        <h2>Skreddersydde IT-løsninger til bedrifter i ulike bransjer</h2>
+        <h2>
+          Individuelt tilpassede IT-løsninger til bedrifter i ulike bransjer
+        </h2>
         <p className="description-intro">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
-          soluta obcaecati suscipit laboriosam cumque laudantium delectus!
-          Sapiente distinctio, eveniet, rem voluptatum totam nesciunt optio
-          dolor dolorem molestiae, in labore minima.
+          Vi er en IT-konsulentbedrift som spesialiserer oss på å levere
+          målrettede løsninger som øker effektiviteten og styrker
+          vekstpotensialet. Vår dedikerte ekspertise og lidenskap for teknologi
+          gjør oss i stand til å forstå de unike behovene til hver enkelt
+          bedrift vi samarbeider med.
         </p>
       </div>
 

@@ -40,6 +40,9 @@ export const DescriptionField = styled.div`
     h2 {
       font-size: 2.4em;
     }
+    .description-intro p {
+      width: 90%;
+    }
   }
 
   @media screen and (max-width: 920px) {

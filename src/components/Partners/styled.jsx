@@ -14,16 +14,23 @@ export const PartnersField = styled.div`
   p {
     margin-bottom: 3rem;
   }
-
-  .logo-partners {
+  .description-bottom {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 7rem;
-    img {
-      max-width: 140px;
-    }
+    justify-content: space-between;
+    font-size: 1.6rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
+
+  // .logo-partners {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   gap: 7rem;
+  //   img {
+  //     max-width: 140px;
+  //   }
+  // }
 
   @media screen and (max-width: 1440px) {
     h2 {
@@ -65,11 +72,16 @@ export const PartnersField = styled.div`
       width: 100%;
       margin-bottom: 2rem;
     }
-    .logo-partners {
-      gap: 3rem;
-      img {
-        max-width: 100px;
-      }
+    // .logo-partners {
+    //   gap: 3rem;
+    //   img {
+    //     max-width: 100px;
+    //   }
+    // }
+    .description-bottom {
+      font-size: 1.4rem;
+      margin-left: 4rem;
+      margin-right: 4rem;
     }
   }
 
@@ -77,20 +89,30 @@ export const PartnersField = styled.div`
     h2 {
       font-size: 2em;
     }
-    .logo-partners {
-      gap: 2rem;
-      img {
-        max-width: 80px;
-      }
+    // .logo-partners {
+    //   gap: 2rem;
+    //   img {
+    //     max-width: 80px;
+    //   }
+    // }
+    .description-bottom {
+      font-size: 1.3rem;
+      margin-left: 3rem;
+      margin-right: 3rem;
     }
   }
 
   @media screen and (max-width: 600px) {
-    .logo-partners {
-      gap: 2rem;
-      img {
-        max-width: 80px;
-      }
+    // .logo-partners {
+    //   gap: 2rem;
+    //   img {
+    //     max-width: 80px;
+    //   }
+    // }
+    .description-bottom {
+      font-size: 1.3rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
     }
   }
   @media screen and (max-width: 515px) {
@@ -100,19 +122,29 @@ export const PartnersField = styled.div`
     p {
       font-size: 0.8em;
     }
-    .logo-partners {
-      gap: 1.2rem;
-      img {
-        max-width: 70px;
-      }
+    // .logo-partners {
+    //   gap: 1.2rem;
+    //   img {
+    //     max-width: 70px;
+    //   }
+    // }
+    .description-bottom {
+      font-size: 1.1rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
     }
   }
   @media screen and (max-width: 400px) {
-    .logo-partners {
-      gap: 0.8rem;
-      img {
-        max-width: 46px;
-      }
+    // .logo-partners {
+    //   gap: 0.8rem;
+    //   img {
+    //     max-width: 46px;
+    //   }
+    // }
+    .description-bottom {
+      font-size: 1rem;
+      margin-left: 0.6rem;
+      margin-right: 0.6rem;
     }
   }
 `;

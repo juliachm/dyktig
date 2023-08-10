@@ -1,5 +1,8 @@
 import { DescriptionField, CardsField } from './styled';
-import AlexanderAbrosimovImg from '../../assets/img-profile.png';
+import KimOedegaardImg from '../../assets/img-profile-kim.jpg';
+import AlexanderAbrosimovImg from '../../assets/img-profile-alexander.png';
+import FredrikHaugsandImg from '../../assets/img-profile-fredrik.jpg';
+import JuliaChmurnaImg from '../../assets/img-profile-julia.jpg';
 
 import Card from './Card';
 import Career from './Career';
@@ -7,24 +10,29 @@ import Career from './Career';
 export default function Team() {
   const teamMembers = [
     {
+      img: KimOedegaardImg,
+      title: 'Kim Ødegaard',
+      content: 'Seniorutvikler / Daglig leder',
+      linkedinURL: 'https://www.linkedin.com/in/kim-silkeb%C3%A6kken-4a86261b/',
+    },
+    {
       img: AlexanderAbrosimovImg,
       title: 'Alexander Abrosimov',
-      content: 'Founder & CEO',
+      content: 'Seniorutvikler',
+      linkedinURL:
+        'https://www.linkedin.com/in/alexander-abrosimov-622179139/?originalSubdomain=no',
     },
     {
-      img: AlexanderAbrosimovImg,
-      title: 'Name Name 2',
-      content: 'Description 2',
+      img: FredrikHaugsandImg,
+      title: 'Fredrik Haugsand',
+      content: 'Seniorutvikler',
+      linkedinURL: 'https://www.linkedin.com/in/fredrik-haugsand-4b9661112/',
     },
     {
-      img: AlexanderAbrosimovImg,
-      title: 'Name Name 3',
-      content: 'Description 5',
-    },
-    {
-      img: AlexanderAbrosimovImg,
-      title: 'Name Name Name 4',
-      content: 'Description 5',
+      img: JuliaChmurnaImg,
+      title: 'Julia Chmurna',
+      content: 'Frontendutvikler / UX-designer',
+      linkedinURL: 'https://www.linkedin.com/in/julia-chmurna-9947b131/',
     },
   ];
 
@@ -33,10 +41,9 @@ export default function Team() {
       <div className="description-intro">
         <h2>Vårt team av dyktige konsulenter</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
-          soluta obcaecati suscipit laboriosam cumque laudantium delectus!
-          Sapiente distinctio, eveniet, rem voluptatum totam nesciunt optio
-          dolor dolorem molestiae, in labore minima.
+          Teamet av erfarne IT-konsulenter samarbeider tett med våre kunder for
+          å identifisere muligheter for effektivisering, optimalisering av
+          prosesser og implementering av ny teknologi.
         </p>
       </div>
 
@@ -47,6 +54,7 @@ export default function Team() {
             img={member.img}
             title={member.title}
             content={member.content}
+            linkedinURL={member.linkedinURL}
           />
         ))}
       </CardsField>

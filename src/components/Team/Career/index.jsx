@@ -9,7 +9,7 @@ export default function Career() {
         hyggelig miljø.
       </p>
       <div className="description-bottom">
-        <a className="link" href="mailto:j.chmurna@gmail.com">
+        <a className="link" href="mailto:alexander@dyktig.no">
           Kontakt oss <span className="arrow">&#8599;</span>
         </a>
       </div>

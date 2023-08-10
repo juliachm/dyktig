@@ -3,16 +3,9 @@ import * as colors from '../../../config/colors';
 
 export const CardContainer = styled.div`
   justify-self: center;
-  filter: grayscale(95%);
-  :hover {
-    filter: grayscale(20%);
-  }
+  filter: grayscale(45%);
 
   .team-img-wrapper {
-    width: auto;
-    height: 220px;
-    overflow: hidden;
-
     img {
       display: block;
       width: 100%;
@@ -22,10 +15,12 @@ export const CardContainer = styled.div`
   }
 
   article {
-    background: ${colors.MAIN_GREEN};
+    background: #fafafa;
     border: none;
     width: 220px;
     transition: transform 0.3s;
+    height: 340px;
+    overflow: hidden;
   }
 
   .team-card-content {
@@ -33,19 +28,21 @@ export const CardContainer = styled.div`
 
     .name {
       font-size: 1rem;
-      font-weight: 400;
+      font-weight: 500;
       text-transform: uppercase;
       text-wrap: balance;
+      margin: 2px 0 4px;
     }
 
     .position {
-      font-weight: 300;
-      font-size: 1rem;
-      margin-bottom: 10px;
+      font-weight: 400;
+      font-size: 0.9rem;
     }
     .icon-card {
-      margin: 0;
-      height: 24px;
+      height: 26px;
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
       filter: brightness(90%);
       :hover {
         filter: brightness(100%);
@@ -54,7 +51,8 @@ export const CardContainer = styled.div`
   }
 
   @media screen and (max-width: 1200px) {
-    :first-child {
+    :first-child,
+    :nth-child(2) {
       margin-bottom: 30px;
     }
   }
